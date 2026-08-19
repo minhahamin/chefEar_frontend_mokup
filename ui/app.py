@@ -11,6 +11,7 @@ import streamlit as st
 
 from streamlit_screens import (
     complete,
+    cooking_complete,
     cooking_step,
     no_match,
     recipe_confirm,
@@ -28,6 +29,7 @@ SCREENS = {
     "start": start.render,
     "recipe_confirm": recipe_confirm.render,
     "cooking_step": cooking_step.render,
+    "cooking_complete": cooking_complete.render,
     "substitution_confirm": substitution_confirm.render,
     "no_match": no_match.render,
     "register_intro": register_intro.render,

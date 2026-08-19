@@ -5,10 +5,13 @@ import streamlit as st
 
 from mock_data import REGISTER_DEFAULTS
 from nav import goto
-from theme import ICON_SPARKLE, render_chat, render_spacer
+from theme import ICON_SPARKLE, render_back_link, render_chat, render_spacer
 
 
 def render() -> None:
+    if render_back_link("처음으로"):
+        goto("start")
+
     render_spacer()
     st.markdown(f'<div class="ce-lead-icon neutral">{ICON_SPARKLE}</div>', unsafe_allow_html=True)
     st.markdown(

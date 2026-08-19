@@ -62,7 +62,7 @@ def render() -> None:
                 st.session_state.chat_log = []
                 goto("cooking_step")
             else:
-                goto("complete")
+                goto("cooking_complete")
 
     st.divider()
     st.caption("아래 버튼들은 재료 대체·예외 상황 화면으로 이어지는 데모용 예시 발화입니다.")
